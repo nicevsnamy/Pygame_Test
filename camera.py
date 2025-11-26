@@ -1,12 +1,12 @@
 class Camera:
     def __init__(self, zoom):
         self.zoom = zoom
-        self.zoom_min = 20
-        self.zoom_max = 500
+        self.zoom_min = 40
+        self.zoom_max = 100
         self.pan_mode = False
         self.x = 0
         self.y = 0
-        self.scroll_speed = 0.5
+        self.scroll_speed = 0.8
 
     def apply_transform(self,x,y):
         return (x+self.x, y+self.y)
@@ -53,5 +53,6 @@ class Camera:
     
     def set_scroll_speed(self, speed):
         self.scroll_speed = speed
+
     def get_scroll_speed(self):
         return self.scroll_speed

@@ -2,8 +2,8 @@ class Grid:
     def __init__(self):
         self.height = 20
         self.width = 20
-        self.cell_height = 50
-        self.cell_width = 50
+        self.cell_height = 100
+        self.cell_width = 100
         self.thickness = 3
     def get_height(self):
         return self.height
